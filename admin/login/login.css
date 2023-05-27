@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    background-color: #2d3a4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  body .logincontainer {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 600px;
+    height: 400px;
+    padding: 50px;
+  }
+  
+  body #loginWarning {
+    color: red;
+  }
+  .aaa{
+    font-size: 25px;
+    color: palegreen;
+  }

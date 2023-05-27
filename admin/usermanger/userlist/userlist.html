@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理系统</title>
+    <link href="https://www.sjziei.edu.cn/images/facvico.ico" mce_href="images/facvico.ico" rel="icon"
+    type="image/x-icon">
+    <link rel="stylesheet" href="/admin/lib/bootstrap.css">
+    <script src="/admin/lib/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./userlist.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="topbar">
+
+        </div>
+        <div class="box">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2 slidmenu">
+
+                    </div>
+                    <div class="col-10 content">
+                        <div class="maincontent">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item" aria-current="page">用户管理</li>
+                                    <li class="breadcrumb-item active" aria-current="page">用户列表</li>
+                                </ol>
+                            </nav>
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">用户名</th>
+                                        <th scope="col">头像</th>
+                                        <th scope="col">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="listbody">
+                                    <!-- <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">编辑用户</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="edituserform" action="">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">用户名</label>
+                            <input type="text" class="form-control" id="username" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">密码</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">个人简介</label>
+                            <textarea class="form-control" id="introduction" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="photofile" class="form-label">头像</label>
+                            <input type="file" class="form-control" id="photofile" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">添加用户</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="editConfirm">更新</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">提示信息</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    你确定要删除吗？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="delConfirm">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="userlist.js" type="module">
+
+    </script>
+</body>
+
+</html>

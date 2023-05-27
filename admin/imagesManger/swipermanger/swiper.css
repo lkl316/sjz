@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body, .main {
+    height: 100%;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main .topbar {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .main .box {
+    flex: 1;
+    padding-top: 50px;
+  }
+  
+  .main .box .content {
+    padding: 20px;
+  }
+  
+  .main .box .content .maincontent {
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+ ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+ }
+ ul li{
+    max-width: 70%;
+    margin-top: 10px;
+ }

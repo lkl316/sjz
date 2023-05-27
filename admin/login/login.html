@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理系统</title>
+    <link href="https://www.sjziei.edu.cn/images/facvico.ico" mce_href="images/facvico.ico" rel="icon"
+    type="image/x-icon">
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <script src="../lib/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="logincontainer">
+        <div class="aaa">后台管理系统</div>
+        <form id="loginform" action="http://localhost:3000/users">
+            <div class="mb-3">
+                <label for="username" class="form-label">用户名</label>
+                <input type="text" class="form-control" id="username" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">密码</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">登录</button>
+
+            <div id="loginWarning" class="form-text" style="display: none;">用户名密码不匹配</div>
+        </form>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理系统</title>
+    <link href="https://www.sjziei.edu.cn/images/facvico.ico" mce_href="images/facvico.ico" rel="icon"
+    type="image/x-icon">
+    <link rel="stylesheet" href="/admin/lib/bootstrap.css">
+    <script src="/admin/lib/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./editnews.css">
+    <link href="https://unpkg.com/@wangeditor/editor@latest/dist/css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/@wangeditor/editor@latest/dist/index.js"></script>
+    <style>
+        #editor—wrapper {
+            border: 1px solid #ccc;
+            z-index: 100;
+            /* 按需定义 */
+        }
+
+        #toolbar-container {
+            border-bottom: 1px solid #ccc;
+        }
+
+        #editor-container {
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="topbar">
+
+        </div>
+        <div class="box">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2 slidmenu">
+
+                    </div>
+                    <div class="col-10 content">
+                        <div class="maincontent">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item" aria-current="page">新闻管理</li>
+                                    <li class="breadcrumb-item active" aria-current="page">编辑新闻</li>
+                                </ol>
+                            </nav>
+                            <!-- http://localhost:3000/users -->
+                            <form id="editNewsform" action="">
+                                <div class="mb-3">
+                                    <label for="title" class="form-label">标题</label>
+                                    <input type="text" class="form-control" id="title" aria-describedby="emailHelp"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="content" class="form-label">内容</label>
+                                    <!-- 富文本编辑器 -->
+                                    <div id="content" style="border: 1px solid #ced4da;">
+                                        <div id="toolbar-container"><!-- 工具栏 --></div>
+                                        <div id="editor-container"><!-- 编辑器 --></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="category" class="form-label">类别</label>
+                                    <select class="form-select" aria-label="Default select example" id="category">
+                                        <option value="0">校园新闻</option>
+                                        <option value="1">公告通知</option>
+                                        <option value="2">系部动态</option>
+                                        <option value="3">媒体报道</option>
+                                        <option value="4">精彩世界</option>
+                                        <option value="5">教授名家</option>
+                                        <option value="6">最美教师</option>
+                                        <option value="7">获奖教师</option>
+                                        <option value="8">师德标兵</option>
+                                        <option value="9">预决算公开</option>
+                                        <option value="10">职业教育青年报</option>
+                                        <option value="11">职业教育活动周</option>
+                                        <option value="12">校园文创作品展</option>
+                                        <option value="13">表单下载</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="coverfile" class="form-label">封面图片</label>
+                                    <input type="file" class="form-control" id="coverfile" >
+                                </div>
+                                <button type="submit" class="btn btn-primary">更新新闻</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="editnews.js" type="module">
+
+    </script>
+</body>
+
+</html>

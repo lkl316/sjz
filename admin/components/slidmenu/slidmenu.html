@@ -1,0 +1,95 @@
+<ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" id="slidmenu-home"
+        href="/admin/home/home.html">首页</a>
+    </li>
+    <li class="nav-item user-manger-item">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#user-manger"
+              aria-expanded="true" aria-controls="collapseOne">
+              用户管理
+            </button>
+          </h2>
+          <div id="user-manger" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <a class="nav-link active" aria-current="page" id="slidmenu-adduser"
+                href="/admin/usermanger/adduser/adduser.html">添加用户</a>
+              <a class="nav-link active" aria-current="page" href="/admin/usermanger/userlist/userlist.html"
+                id="slidmenu-username">用户列表</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#news-manger"
+              aria-expanded="true" aria-controls="collapseOne">
+              新闻管理
+            </button>
+          </h2>
+          <div id="news-manger" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <a class="nav-link active" aria-current="page" href="/admin/newsmanger/addnews/addnews.html"
+                id="slidmenu-addnews">添加新闻</a>
+              <a class="nav-link active" aria-current="page" href="/admin/newsmanger/newslist/newslist.html"
+                id="slidmenu-newslists">新闻列表</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+
+    <li class="nav-item">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#images-manger"
+              aria-expanded="true" aria-controls="collapseOne">
+              图片管理
+            </button>
+          </h2>
+          <div id="images-manger" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <a class="nav-link active" aria-current="page" href="/admin/imagesManger/swipermanger/swiper.html"
+                id="swipermanger">主页轮播图</a>
+              <a class="nav-link active" aria-current="page" href="/admin/imagesManger/collegeManger/college.html"
+                id="collegeManger">校园生活图</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <style>
+    .accordion-button:not(.collapsed) {
+      color: black;
+      background-color: white;
+      box-shadow: none;
+    }
+  
+    .accordion-item {
+      border: 0;
+    }
+  
+    .nav-link {
+      color: black;
+    }
+  
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+  
+    a {
+      color: black;
+      text-decoration: underline;
+    }
+  </style>

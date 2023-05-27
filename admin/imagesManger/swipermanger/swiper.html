@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/admin/lib/bootstrap.css">
+    <script src="/admin/lib/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="swiper.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="topbar">
+
+        </div>
+        <div class="box">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2 slidmenu">
+
+                    </div>
+                    <div class="col-10 content">
+                        <div class="maincontent">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item" aria-current="page">图片管理</li>
+                                    <li class="breadcrumb-item active" aria-current="page">主页轮播图</li>
+                                </ol>
+                            </nav>
+                            <!-- http://localhost:3000/users -->
+                            <form id="swiperform" action="">
+                                <div class="mb-3">
+                                    <label for="photofile" class="form-label">图片</label>
+                                    <input type="file" class="form-control" id="photofile" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">添加图片</button>
+                            </form>
+                            <ul class="swiperBox">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="swiper.js" type="module">
+
+    </script>
+</body>
+
+</html>
