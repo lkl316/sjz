@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 130px;
+    /* background: linear-gradient(to right,rgb(71, 142, 235),blue); */
+    background: #18589e url("https://www.sjziei.edu.cn/images/logo2.png") no-repeat;
+    background-position: 200px center;
+    /* background-color: linear-gradient(to right,rgb(71, 142, 235),blue); */
+    position: relative;
+    border-bottom: 1px solid black;
+}
+header input{
+    background-color: transparent;
+    padding-left: 20px;
+    width: 235px;
+    height: 40px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid rgba(247, 243, 243, 0.842);
+    position: absolute;
+    right: 80px;
+    bottom: 50px;
+    color: white;
+}
+/* header img{
+    margin-left: 100px;
+    margin-top: 20px;
+    background-image: url("https://www.sjziei.edu.cn/images/logo2.png");
+} */
+header input::placeholder{
+    color: rgba(233, 223, 223, 0.863);
+}
+nav{
+    width: 100%;
+    height: 44px;
+    background-color: #18589e;
+    position: relative;
+    z-index: 99;
+}
+.navbox{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+.navbox ul{
+    display: flex;
+}
+.navbox>ul>li{
+    flex: 1;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+}
+.navbox li ul{
+    display: flex;
+    flex-direction: column;
+}
+.navbox li ul li{
+    width: 120px;
+    height: 44px;
+    color: black;
+    display: none;
+    font-size: 14px;
+    background-color: white;
+}
+.navbox ul li:hover ul li{
+    display: block;
+    z-index: 1;
+}
+.navbox li ul li:hover{
+    background-color: lightblue;
+    color: blue;
+    transition: all 1s;
+}
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+.daohang{
+    height: 422px;
+    width: 100%;
+    position: relative;
+}
+.daohang img{
+    width: 100%;
+    height: 422px;
+}
+.titi{
+    height:100px;
+    width: 450px;
+    background:linear-gradient(to right,rgba(68, 107, 128, 0.1),rgba(16, 82, 118, 0.8));
+    position: absolute;
+    font-size: 45px;
+    text-indent: 5em;
+    line-height: 100px;
+    left: 0;
+    bottom: 0;
+    color: white;
+}
+.shishi{
+    width: 1258px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(204, 199, 199, 0.7);
+}
+.shishi div:nth-child(1){
+    margin-left: 400px;
+}
+.shishi div{
+    float: left;
+    font-size: 20px;
+    line-height: 80px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+
+.five{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 293px;
+    background-color: #304174;
+    background-image: url("https://www.sjziei.edu.cn/images/logo2.png");
+    background-repeat: no-repeat;
+    background-position: center 170px;
+    position: relative;
+}
+.five .liu li{
+    color: white;
+    margin-bottom: 5px;
+}
+.five .liu{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.five .liu :not(:nth-child(1)){
+    font-size: 14px;
+    color: gray;
+}
+.five .liu li:nth-child(1){
+    margin-bottom: 5px;
+}
+.youqing{
+    font-size: 20px;
+    color: white;
+    width: 310px;
+    height: 45px;
+    background-color: rgba(199, 208, 217, .14);
+    position: relative;
+    top: 55px;
+    right: -730px;
+    text-align: center;
+    line-height: 45px;
+}
+.youqing ul{
+    position: relative;
+    color: black;
+    top: -350px;
+    background-color: white;
+    display: none;
+}
+.youqing:hover ul{
+    display: block;
+    cursor: pointer;
+}
+.youqing ul li:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+.lianjie{
+    font-size: 20px;
+    color: white;
+    width: 310px;
+    height: 45px;
+    background-color: rgba(199, 208, 217, .14);
+    position: relative;
+    top: 85px;
+    right: -730px;
+    text-align: center;
+    line-height: 45px;
+}
+.lianjie ul{
+    position: relative;
+    color: black;
+    top: -405px;
+    background-color: white;
+    display: none;
+}
+.lianjie:hover ul{
+    display: block;
+    cursor: pointer;
+}
+.lianjie ul li:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+.erwei{
+    position: absolute;
+    bottom: 35px;
+    right: 215px;
+}
+#list img{
+    width: 120px;
+    height: 200px;
+}
+.chakan{
+    width: 190px;
+    height: 45px;
+    background-color: white;
+    border: 1px solid blue;
+    position: absolute;
+    bottom: -130px;
+    left: 150px;
+    text-align: center;
+    line-height: 45px;
+}
+.chakan:hover{
+    background-color: skyblue;
+}
+#list li{
+    position: relative;
+}
